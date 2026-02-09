@@ -1,0 +1,17 @@
+All Functions — Leaf Names Only (Alphabetical)
+==============================================
+
+Total: 11 functions
+Generated: 2026-02-09T17:06:28.763Z
+
+aggregateWithNestedLoops
+anonymous
+catch
+classifyAndHandle
+evaluateNestedPayload
+iterateWithGuards
+processByKind
+processNestedConditions
+resolveDeep
+resolveValue
+runAllDecisionPoints

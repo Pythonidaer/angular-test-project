@@ -28,7 +28,7 @@
       </div>
       <div class='fl pad1y space-right2'>
         <span class="quiet">Control Flow</span>
-        <span class='fraction'>11</span>
+        <span class='fraction'>10</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="quiet">Expressions</span>
@@ -48,25 +48,25 @@
         <label style="margin: 0; font-weight: normal;"><input type="checkbox" id="breakdown-show-table" onchange="toggleTableVisibility()" checked> Show Table</label>
         <label style="margin: 0; font-weight: normal;"><input type="checkbox" id="breakdown-show-highlights" onchange="toggleHighlights()" checked> Show Highlights</label>
       </div>
-      <table class="complexity-breakdown-table" id="complexity-breakdown-table" style="display: table;" data-colspan-with-lines="13" data-colspan-without-lines="12">
+      <table class="complexity-breakdown-table" id="complexity-breakdown-table" style="display: table;" data-colspan-with-lines="17" data-colspan-without-lines="16">
         <thead id="complexity-breakdown-thead">
-          <tr><th colspan="13" class="breakdown-header" id="breakdown-header-span">Function Complexity Breakdown</th></tr>
+          <tr><th colspan="17" class="breakdown-header" id="breakdown-header-span">Function Complexity Breakdown</th></tr>
           <tr id="breakdown-group-headers-row">
             <th rowspan="2" class="breakdown-function-header sortable" onclick="sortTable('function')" id="sort-function-header">Function (base = 1) <span class="sort-indicator" id="sort-function-indicator"></span></th>
             <th rowspan="2" class="breakdown-line-header breakdown-line-column sortable" onclick="sortTable('line')" id="sort-line-header">Line <span class="sort-indicator" id="sort-line-indicator"></span></th>
             <th rowspan="2" class="breakdown-complexity-header sortable" onclick="sortTable('complexity')" id="sort-complexity-header">Complexity <span class="sort-indicator" id="sort-complexity-indicator"></span></th>
-            <th colspan="5" class="breakdown-group-header" data-group="Control Flow" data-total-cols="9">Control Flow</th><th colspan="4" class="breakdown-group-header" data-group="Expressions" data-total-cols="5">Expressions</th><th colspan="1" class="breakdown-group-header" data-group="Function Parameters" data-total-cols="1">Function Parameters</th>
+            <th colspan="9" class="breakdown-group-header" data-group="Control Flow" data-total-cols="9">Control Flow</th><th colspan="4" class="breakdown-group-header" data-group="Expressions" data-total-cols="5">Expressions</th><th colspan="1" class="breakdown-group-header" data-group="Function Parameters" data-total-cols="1">Function Parameters</th>
           </tr>
-          <tr id="breakdown-col-headers-row"><th class="breakdown-col-header sortable" data-column-key="if" onclick="sortTable('if')" id="sort-if-header">if <span class="sort-indicator" id="sort-if-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="for" onclick="sortTable('for')" id="sort-for-header">for <span class="sort-indicator" id="sort-for-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="while" onclick="sortTable('while')" id="sort-while-header">while <span class="sort-indicator" id="sort-while-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="case" onclick="sortTable('case')" id="sort-case-header">case <span class="sort-indicator" id="sort-case-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="catch" onclick="sortTable('catch')" id="sort-catch-header">catch <span class="sort-indicator" id="sort-catch-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="ternary" onclick="sortTable('ternary')" id="sort-ternary-header">?: <span class="sort-indicator" id="sort-ternary-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="&&" onclick="sortTable('&&')" id="sort-&&-header">&& <span class="sort-indicator" id="sort-&&-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="??" onclick="sortTable('??')" id="sort-??-header">?? <span class="sort-indicator" id="sort-??-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="?." onclick="sortTable('?.')" id="sort-?.-header">?. <span class="sort-indicator" id="sort-?.-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="default parameter" onclick="sortTable('default parameter')" id="sort-default parameter-header">default parameter <span class="sort-indicator" id="sort-default parameter-indicator"></span></th></tr>
+          <tr id="breakdown-col-headers-row"><th class="breakdown-col-header sortable" data-column-key="if" onclick="sortTable('if')" id="sort-if-header">if <span class="sort-indicator" id="sort-if-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="else if" onclick="sortTable('else if')" id="sort-else if-header">else if <span class="sort-indicator" id="sort-else if-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="for" onclick="sortTable('for')" id="sort-for-header">for <span class="sort-indicator" id="sort-for-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="for...of" onclick="sortTable('for...of')" id="sort-for...of-header">for...of <span class="sort-indicator" id="sort-for...of-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="for...in" onclick="sortTable('for...in')" id="sort-for...in-header">for...in <span class="sort-indicator" id="sort-for...in-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="while" onclick="sortTable('while')" id="sort-while-header">while <span class="sort-indicator" id="sort-while-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="do...while" onclick="sortTable('do...while')" id="sort-do...while-header">do...while <span class="sort-indicator" id="sort-do...while-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="case" onclick="sortTable('case')" id="sort-case-header">case <span class="sort-indicator" id="sort-case-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="catch" onclick="sortTable('catch')" id="sort-catch-header">catch <span class="sort-indicator" id="sort-catch-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="ternary" onclick="sortTable('ternary')" id="sort-ternary-header">?: <span class="sort-indicator" id="sort-ternary-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="&&" onclick="sortTable('&&')" id="sort-&&-header">&& <span class="sort-indicator" id="sort-&&-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="??" onclick="sortTable('??')" id="sort-??-header">?? <span class="sort-indicator" id="sort-??-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="?." onclick="sortTable('?.')" id="sort-?.-header">?. <span class="sort-indicator" id="sort-?.-indicator"></span></th><th class="breakdown-col-header sortable" data-column-key="default parameter" onclick="sortTable('default parameter')" id="sort-default parameter-header">default parameter <span class="sort-indicator" id="sort-default parameter-indicator"></span></th></tr>
         </thead>
         <tbody id="complexity-breakdown-tbody">
                   <tr class="breakdown-function-row" data-line="11" data-function-start="11" data-function-end="55" role="button" tabindex="0" title="Click to jump to function in code; click again to clear">
-          <td class="function-name"><span class="function-name-leaf">anonymous</span></td>
+          <td class="function-name"><span class="function-name-leaf">runAllDecisionPoints</span></td>
           <td class="breakdown-line-value breakdown-line-column" data-line="11">11</td>
           <td class="complexity-value complexity-above-threshold"><span class="complexity-number">22</span></td>
-          <td class="breakdown-value" data-column-key="if">2</td><td class="breakdown-value" data-column-key="for">3</td><td class="breakdown-value" data-column-key="while">2</td><td class="breakdown-value" data-column-key="case">3</td><td class="breakdown-value" data-column-key="catch">1</td><td class="breakdown-value" data-column-key="ternary">1</td><td class="breakdown-value" data-column-key="&&">1</td><td class="breakdown-value" data-column-key="??">3</td><td class="breakdown-value" data-column-key="?.">4</td><td class="breakdown-value" data-column-key="default parameter">2</td>
+          <td class="breakdown-value" data-column-key="if">1</td><td class="breakdown-value" data-column-key="else if">1</td><td class="breakdown-value" data-column-key="for">1</td><td class="breakdown-value" data-column-key="for...of">1</td><td class="breakdown-value" data-column-key="for...in">1</td><td class="breakdown-value" data-column-key="while">1</td><td class="breakdown-value" data-column-key="do...while">1</td><td class="breakdown-value" data-column-key="case">2</td><td class="breakdown-value" data-column-key="catch">1</td><td class="breakdown-value" data-column-key="ternary">1</td><td class="breakdown-value" data-column-key="&&">1</td><td class="breakdown-value" data-column-key="??">3</td><td class="breakdown-value" data-column-key="?.">4</td><td class="breakdown-value" data-column-key="default parameter">2</td>
         </tr>
-          <tr id="no-matches-row" style="display: none;"><td colspan="13" class="no-matches-message">No functions match the current filter.</td></tr>
+          <tr id="no-matches-row" style="display: none;"><td colspan="17" class="no-matches-message">No functions match the current filter.</td></tr>
         </tbody>
       </table>
     </div>
@@ -129,7 +129,7 @@
 </tr>
 <tr data-line="11">
 <td class="line-count quiet"><a name='L11'></a><a href='#L11'>11</a></td>
-<td class="line-coverage quiet"><span class="cline-any cline-yes" title="Function 'anonymous' has complexity 22">22</span></td>
+<td class="line-coverage quiet"><span class="cline-any cline-yes" title="Function 'runAllDecisionPoints' has complexity 22">22</span></td>
 <td class="text"><pre class="prettyprint lang-ts"><span class="code-line">  runAllDecisionPoints(</span></pre></td>
 </tr>
 <tr data-line="12">
@@ -292,10 +292,10 @@
 <td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span></td>
 <td class="text"><pre class="prettyprint lang-ts"><span class="code-line">        break;</span></pre></td>
 </tr>
-<tr class="decision-point" data-line="44">
+<tr data-line="44">
 <td class="line-count quiet"><a name='L44'></a><a href='#L44'>44</a></td>
 <td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span></td>
-<td class="text"><pre class="prettyprint lang-ts"><span class="code-line">      </span><span class="code-line decision-point-line">default:</span></pre></td>
+<td class="text"><pre class="prettyprint lang-ts"><span class="code-line">      default:</span></pre></td>
 </tr>
 <tr data-line="45">
 <td class="line-count quiet"><a name='L45'></a><a href='#L45'>45</a></td>
@@ -368,7 +368,7 @@
     <div class='push'></div>
 </div>
 <div class='footer quiet pad2 space-top1 center small'>
-    Complexity report generated by <a href="https://www.github.com/pythonidaer" target="_blank" rel="noopener noreferrer">pythonidaer</a> at 2026-02-08T22:15:59.196Z
+    Complexity report generated by <a href="https://www.github.com/pythonidaer" target="_blank" rel="noopener noreferrer">pythonidaer</a> at 2026-02-09T17:06:28.759Z
 </div>
 <button type="button" id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">↑</button>
 <script src="../../prettify.js"></script>
@@ -377,7 +377,7 @@
   let showLines = true;
   let sortColumn = 'complexity';
   let sortDirection = 'desc';
-  const columnConfig = {"groups":[{"name":"Control Flow","columns":[{"key":"if","label":"if"},{"key":"else if","label":"else if"},{"key":"for","label":"for"},{"key":"for...of","label":"for...of"},{"key":"for...in","label":"for...in"},{"key":"while","label":"while"},{"key":"do...while","label":"do...while"},{"key":"case","label":"case"},{"key":"catch","label":"catch"}],"totalColumns":9},{"name":"Expressions","columns":[{"key":"ternary","label":"?:"},{"key":"&&","label":"&&"},{"key":"||","label":"||"},{"key":"??","label":"??"},{"key":"?.","label":"?."}],"totalColumns":5},{"name":"Function Parameters","columns":[{"key":"default parameter","label":"default parameter"}],"totalColumns":1}],"emptyColumns":["else if","for...of","for...in","do...while","||"],"baseColumn":{"key":"base","label":"base"}};
+  const columnConfig = {"groups":[{"name":"Control Flow","columns":[{"key":"if","label":"if"},{"key":"else if","label":"else if"},{"key":"for","label":"for"},{"key":"for...of","label":"for...of"},{"key":"for...in","label":"for...in"},{"key":"while","label":"while"},{"key":"do...while","label":"do...while"},{"key":"case","label":"case"},{"key":"catch","label":"catch"}],"totalColumns":9},{"name":"Expressions","columns":[{"key":"ternary","label":"?:"},{"key":"&&","label":"&&"},{"key":"||","label":"||"},{"key":"??","label":"??"},{"key":"?.","label":"?."}],"totalColumns":5},{"name":"Function Parameters","columns":[{"key":"default parameter","label":"default parameter"}],"totalColumns":1}],"emptyColumns":["||"],"baseColumn":{"key":"base","label":"base"}};
   const COVERAGE_LINE_TO_SPAN = {"11":{"start":11,"end":55,"indent":2},"12":{"start":11,"end":55,"indent":2},"13":{"start":11,"end":55,"indent":2},"14":{"start":11,"end":55,"indent":2},"15":{"start":11,"end":55,"indent":2},"16":{"start":11,"end":55,"indent":2},"17":{"start":11,"end":55,"indent":2},"18":{"start":11,"end":55,"indent":2},"19":{"start":11,"end":55,"indent":2},"20":{"start":11,"end":55,"indent":2},"21":{"start":11,"end":55,"indent":2},"22":{"start":11,"end":55,"indent":2},"23":{"start":11,"end":55,"indent":2},"24":{"start":11,"end":55,"indent":2},"25":{"start":11,"end":55,"indent":2},"26":{"start":11,"end":55,"indent":2},"27":{"start":11,"end":55,"indent":2},"28":{"start":11,"end":55,"indent":2},"29":{"start":11,"end":55,"indent":2},"30":{"start":11,"end":55,"indent":2},"31":{"start":11,"end":55,"indent":2},"32":{"start":11,"end":55,"indent":2},"33":{"start":11,"end":55,"indent":2},"34":{"start":11,"end":55,"indent":2},"35":{"start":11,"end":55,"indent":2},"36":{"start":11,"end":55,"indent":2},"37":{"start":11,"end":55,"indent":2},"38":{"start":11,"end":55,"indent":2},"39":{"start":11,"end":55,"indent":2},"40":{"start":11,"end":55,"indent":2},"41":{"start":11,"end":55,"indent":2},"42":{"start":11,"end":55,"indent":2},"43":{"start":11,"end":55,"indent":2},"44":{"start":11,"end":55,"indent":2},"45":{"start":11,"end":55,"indent":2},"46":{"start":11,"end":55,"indent":2},"47":{"start":11,"end":55,"indent":2},"48":{"start":11,"end":55,"indent":2},"49":{"start":11,"end":55,"indent":2},"50":{"start":11,"end":55,"indent":2},"51":{"start":11,"end":55,"indent":2},"52":{"start":11,"end":55,"indent":2},"53":{"start":11,"end":55,"indent":2},"54":{"start":11,"end":55,"indent":2},"55":{"start":11,"end":55,"indent":2}};
 
   (function initHoverVerticalLine() {

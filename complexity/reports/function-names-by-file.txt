@@ -1,0 +1,37 @@
+Functions by Folder/File
+=======================
+
+Total folders: 3
+Total functions: 11
+Generated: 2026-02-09T17:06:28.763Z
+
+
+src/
+────
+
+  main.ts
+    - catch
+
+src/app/
+────────
+
+  app.ts
+    - anonymous
+
+  complexity-nested-test.service.ts
+    - aggregateWithNestedLoops
+    - classifyAndHandle
+    - iterateWithGuards
+    - processNestedConditions
+    - resolveValue
+
+  decision-point-test.service.ts
+    - runAllDecisionPoints
+
+src/app/complexity-tests/deep/nested/decision-points/
+─────────────────────────────────────────────────────
+
+  super-nested-complexity.util.ts
+    - evaluateNestedPayload
+    - processByKind
+    - resolveDeep
